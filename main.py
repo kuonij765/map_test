@@ -8,4 +8,8 @@ import pandas as pd
 st.set_page_config(page_title="남동고 등산 메이트", layout="wide")
 
 st.title("⛰️ 2026 학교 등산 행사 안내 지도")
+st.markdown("우리 동아리가 직접 발로 뛰며 만든 코스 가이드 입니다.")
+st.markkown("왼쪽 메뉴에서 코스를 선택하고 행사에 참여해 보세요.")
+
+
 st.text("안녕하세요 남동고 학생 여러분!!")
