@@ -23,7 +23,7 @@ st.text("안녕하세요 남동고 학생 여러분!!")
 
 # 2. 데이터 읽어보기(데이터 수집 csv)
 df = pd.read_csv('인천광역시 남동구_고등학교_20240325.csv',encoding='cp949')
-df_latlon = df[['위도'],['경도']]
+df_latlon = df[['위도','경도']]
 df_latlon = df_latlon.rename(columns={'위도':'lat','경도':'lon'})
 #st.map(df_latlon)
 
@@ -39,3 +39,6 @@ folium.Marker(
   tooltip="클릭해보세요",
   icon = folium.Icon(color='green',icon='info-sign')
 ).add_to(m)
+
+# 4. 화면 출력
+st_folium(m, width=700, height=500)
