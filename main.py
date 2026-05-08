@@ -6,4 +6,6 @@ import pandas as pd
 
 # 1. 웹페이지 설정
 st.set_page_config(page_title="남동고 등산 메이트", layout="wide")
-st.text("hello github my first page")
+
+st.title("⛰️ 2026 학교 등산 행사 안내 지도")
+st.text("안녕하세요 남동고 학생 여러분!!")
