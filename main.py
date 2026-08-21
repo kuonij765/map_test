@@ -78,7 +78,7 @@ else:
 
 
 m = folium.Map(
-    location = [37.407514, 126.719833],
+    location = [37.407514, 126.719833], # 듬배산 정상 GPS
     zoom_start=16
 )
 
@@ -97,7 +97,7 @@ for course_name, group in df.groupby('코스'):
         continue
     
     # 코스 식별 키 추출 
-    c_key = course_name 
+    c_key = course_name +'코스'
     c_data = course_info.get(c_key, {"color": "gray", "time": "-", "notice": "", "caution": "안전에 유의하세요."})
     marker_color = c_data["color"]
     
