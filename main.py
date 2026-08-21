@@ -1,7 +1,7 @@
 # main.py
 import os
 import streamlit as st
-import foliu
+import folium
 from streamlit_folium import st_folium
 import pandas as pd
 
