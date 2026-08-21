@@ -146,7 +146,7 @@ with col2:
     if selected_course != "전체 코스 보기":
         c_key = selected_course + '코스'
         info = course_info.get(c_key, {})
-        st.marker(f"### 🏃**{selected_course}** 코스 ")
+        st.markdown(f"### 🏃**{selected_course}** 코스")
     
     st.info("길이 미끄럽습니다. 주의하세요.") # 코스별 정보 넣기
     st.metric(label="소요시간", value="10분") # 소요시간, 정보 코스별로 넣기
